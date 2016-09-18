@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<canvas id="can" width="500" height="500" style="border: 1px solid red"></canvas>
+<script>
+    var cav=document.getElementById("can");
+    var ca=cav.getContext('2d');
+    ca.moveTo(100,100);
+    ca.lineTo(125,150);
+    ca.lineTo(75,150);
+    ca.lineTo(100,100);
+    ca.strokeStyle="red";
+    ca.stroke();
+
+
+
+
+
+
+
+
+
+
+//    // 有100盏灯，开始全部是关闭的，有100个人，当一个人把灯全部打开，第二个人隔一盏灯操作一盏灯，第三个人隔两盏灯操作一盏灯，以此类推，问100个人以后，还有几盏灯是开着的。
+//    var arr=[];
+//    for(var i=0;i<100;i++){
+//        arr.push({});
+//        arr[i].a=0;
+//    }
+//    for(var j=1;j<=100;j++) {
+//        for (var k = 1; k <= 100; k++) {
+//            if (j * k <= 100) {
+//                if (arr[j * k - 1].a == 0) {
+//                    arr[j * k - 1].a = 1;
+//                } else if (arr[j * k - 1].a == 1) {
+//                    arr[j * k - 1].a = 0;
+//                }
+//            }
+//        }
+//        var arr1 = [];
+//        for (var o = 0; o < 100; o++) {
+//            if (arr[o].a == 1) {
+//                arr1.push(arr[o]);
+//            }
+//        }
+//    }
+//    console.log(arr1.length);
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

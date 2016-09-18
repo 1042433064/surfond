@@ -1,0 +1,74 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td
+{ margin:0; padding:0; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }
+small{ font-size:12px; }
+ul, ol { list-style:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+button, input, select, textarea { font-size:100%; }
+table { border-collapse:collapse; border-spacing:0; }
+.clearfix::before,
+.clearfix::after{
+    /*content:"\200B"; content:"\200B";这个参数，Unicode字符里有一个“零宽度空格”，即 U+200B，代替原来的“”，可以缩减代码量。而且不再使用visibility:hidden。
+    display:block;
+    height:0;
+    clear:both;*/
+    content: "";
+    height: 0;
+    line-height:0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+.div {
+    height: 350px;
+    width: 350px;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+    display: inline-block;
+    border: 1px solid #000;
+}
+.div>img {
+    width: 100%;
+}
+.smalldiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    opacity: .4;
+}
+.showdiv {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 20px;
+    border: 1px solid #000;
+    display: none;
+    overflow: hidden;
+    position: relative;
+}
+#img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+
+
